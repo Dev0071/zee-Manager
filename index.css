@@ -1,0 +1,447 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 15px;
+}
+
+:root {
+    --primary-color: #f2ebe1;
+    --bg-mobile-color: #faf9f8;
+    --secondary-color: #f18f59;
+    --tertiary-color: #fcbda3;
+    --color-3: #fce5bc;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--primary-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+main {
+    background-color: var(--bg-mobile-color);
+    display: flex;
+    width: 90%;
+    height: 90%;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+nav {
+    display: flex;
+
+}
+
+.logo {
+    padding: 10px;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.nav-icons {
+    /* float: right; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 20%;
+    height: 100%;
+    padding: 15px;
+    background-color: rgb(255, 254, 254);
+}
+
+.nav-icons div {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+
+.icons>span {
+    /* margin: 0.5rem; */
+    padding: 10px;
+}
+
+.help {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #000;
+    color: #fff;
+    padding: 10px;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+}
+
+.nav-items {
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 0.5rem;
+    background-color: var(--primary-color);
+}
+
+
+.nav-items div {
+    cursor: pointer;
+}
+
+.full-logo {
+    margin-bottom: 0.5rem;
+    padding: 10px;
+
+
+}
+
+.full-logo>p {
+    font-weight: 800;
+    font-size: 18px;
+}
+
+.hidden {
+    display: none;
+}
+
+.toggle-icon.hidden {
+    display: none;
+}
+
+#teams,
+#projects,
+#tasks,
+#reminders,
+#messeger {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 600;
+}
+
+#teams-content,
+#projects-content,
+#tasks-content,
+#reminders-content,
+#messeger-content {
+    /* display: flex;
+    flex-direction: column; */
+    gap: 0.5rem;
+    margin-left: 1rem;
+}
+
+.active {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    border-radius: 10px;
+}
+
+.hamburger-logo {
+    display: none;
+}
+
+
+.hamburger-menu {
+    display: none;
+    cursor: pointer;
+}
+
+#mobile-search {
+    display: none;
+}
+
+#home-content {
+    padding: 15px 5px;
+    /* height: 100%; */
+}
+
+/* .search {
+    max-width: 600px;
+} */
+
+#desktop-search {
+    /* display: flex; */
+    padding: 9px 13px;
+    /* align-items: center; */
+    border-radius: 10px;
+    outline: none;
+    border: 1px solid var(--primary-color);
+    background-color: transparent;
+    /* max-width: 600px; */
+    width: 400px;
+    /* min-width: 200px; */
+    margin: 10px 0 25px 0;
+
+}
+
+/* Adjust the styling of the input field and the icon */
+.search-input {
+    position: relative;
+    display: inline-block;
+    /* width: 600px; */
+}
+
+#desktop-search {
+    padding-left: 30px;
+    /* Add space for the icon */
+}
+
+.search-icon {
+    position: absolute;
+    top: 45%;
+    left: 10px;
+    /* Adjust the icon's horizontal position */
+    transform: translateY(-50%);
+}
+
+/* Hide the placeholder text */
+/* #desktop-search::-webkit-input-placeholder {
+    color: transparent;
+} */
+
+/* Show the placeholder text */
+/* .placeholder-text {
+    position: absolute;
+    top: 50%;
+    left: 40px;
+    transform: translateY(-50%);
+    pointer-events: none;
+} */
+
+/* .recent-projects {
+    width: 100%;
+} */
+
+.projects-headers {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+
+}
+
+.projects-headers>p {
+    color: var(--secondary-color);
+    cursor: pointer;
+}
+
+.projects-headers>h3 {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.projects-container {
+    width: 100%;
+    display: flex;
+    /* gap: 1rem; */
+    justify-content: space-between;
+
+}
+
+.project {
+    display: flex;
+    flex-direction: column;
+    width: 190px;
+    height: 250px;
+    background: var(--color-3);
+    border-radius: 20px;
+    padding: 20px;
+    justify-content: space-between;
+    cursor: pointer;
+
+}
+
+.project>.project-content>p {
+    margin: 7px 0;
+}
+
+.project-content>.p-title {
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.project-content>.p-description {
+    font-size: 12px;
+}
+
+.project>.team-mates {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.project>.team-mates>p {
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.project>.team-mates>.mate {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #000;
+    border-radius: 9999px;
+    padding: 5px 7px;
+    color: #faf9f8;
+}
+
+.reminders-container>.heading {
+    font-weight: 600;
+    font-size: 16px;
+    margin-top: 8px;
+}
+
+.one-reminder {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    border: 2px solid var(--primary-color);
+    border-radius: 20px;
+    margin-top: 8px;
+}
+
+.reminder-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.content-container>.rem-time {
+    font-size: 10px;
+}
+
+.content-container>.rem-title {
+    font-weight: 600;
+}
+
+.reminder-content>.rem-btn {
+    border: 2px dotted var(--secondary-color);
+    border-radius: 50px;
+    font-size: 14px;
+    background-color: transparent;
+    padding: 5px 10px;
+}
+
+.one-reminder>.pagination {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--tertiary-color);
+}
+
+#home2 {
+    padding: 15px 5px;
+}
+
+@media (max-width: 440px) {
+    /* .main {
+        overflow: visible;
+    } */
+
+    #desktop-search {
+        width: 300px;
+    }
+
+    .projects-container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 1rem;
+    }
+
+    .project {
+        width: 100%;
+        height: 100%;
+    }
+
+
+}
+
+/* Media query for small screens */
+@media (max-width: 768px) {
+    main {
+        display: block;
+        width: 100%;
+        height: 100%;
+        border-radius: 0px;
+        overflow: hidden;
+        padding: 0 20px;
+    }
+
+    nav {
+        justify-content: space-between;
+        position: relative;
+        width: 100%;
+        height: 30px;
+        align-items: center;
+        padding: 25px 0;
+    }
+
+    .hamburger-menu {
+        display: block;
+    }
+
+    .hamburger-logo {
+        display: block;
+        font-weight: 700;
+        font-size: 18px;
+    }
+
+    .nav-icons {
+        display: none;
+    }
+
+    #mobile-search {
+        display: block;
+        padding: 5px 10px;
+        border-radius: 10px;
+        outline: none;
+        border: 1px solid var(--primary-color);
+        background-color: transparent;
+        font-size: 0.8rem;
+        width: 250px;
+
+    }
+
+    .nav-items {
+        flex-direction: column-reverse;
+        gap: 1rem;
+        top: 3rem;
+        position: absolute;
+        left: 5%;
+        background-color: var(--primary-color);
+        border-radius: 10px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        transform: scaleY(0);
+        transform-origin: top;
+        transition: transform 0.3s ease-in-out;
+        z-index: 99999999;
+    }
+
+    #home-content {
+        padding: 0;
+    }
+
+    .recent-projects {
+        /* width: 90%; */
+        /* margin: 20px; */
+    }
+
+    .projects-container {
+
+        justify-content: space-around;
+    }
+
+    .nav-items.show {
+        transform: scaleY(1);
+        display: block;
+    }
+}

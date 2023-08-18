@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+
+
+    <title>project Manager</title>
+</head>
+
+<body>
+    <main>
+        <nav>
+            <div id="hamburger-menu" class="hamburger-menu">
+                <span class="material-icons-outlined">
+                    menu
+                </span>
+            </div>
+            <!-- <div class="search"><input type="search" name="" id="mobile-search" placeholder="search for..."></div> -->
+            <aside class="nav-icons">
+                <div class="logo">
+                    Zee
+                </div>
+                <div class="icons">
+                    <span id="home-btn" class="material-icons-outlined">
+                        home
+                    </span>
+                    <span id="teams-btn" class="material-icons-outlined">
+                        group
+                    </span>
+                    <span id="tasks-btn" class="material-icons-outlined">
+                        task
+                    </span>
+                    <span id="projects-btn" class="material-icons-outlined">
+                        article
+                    </span>
+                    <span id="reminders-btn" class="material-icons-outlined">
+                        event
+                    </span>
+                    <span id="messeger-btn" class="material-icons-outlined">
+                        forum
+                    </span>
+                </div>
+                <div class="help">?</div>
+            </aside>
+            <div class="hamburger-logo">full-logo</div>
+            <div class="nav-items">
+                <div class="full-logo">
+                    <p>zee compass</p>
+                    <small>we maximize effeciency</small>
+                </div>
+                <div class="nav-sections">
+                    <div class="teams">
+                        <div id="teams">Teams 1 <span class="material-icons-outlined toggle-icon">
+                                keyboard_arrow_down
+                            </span>
+                            <span class="material-icons-outlined toggle-icon hidden">
+                                chevron_right
+                            </span>
+                        </div>
+                        <div id="teams-content" class="hidden">
+                            <div>Your Team</div>
+                        </div>
+                    </div>
+                    <div class="projects">
+                        <div id="projects">Projects 3
+                            <span class="material-icons-outlined toggle-icon">
+                                keyboard_arrow_down
+                            </span>
+                            <span class="material-icons-outlined toggle-icon hidden">
+                                chevron_right
+                            </span>
+                        </div>
+                        <div id="projects-content" class="hidden">
+                            <div>In progress</div>
+                            <div>Completed</div>
+                            <div>Overdue</div>
+                            <div style="font-weight: 600;">Add New Project</div>
+                        </div>
+
+                    </div>
+                    <div class="tasks">
+                        <div id="tasks">Tasks 3
+                            <span class="material-icons-outlined toggle-icon">
+                                keyboard_arrow_down
+                            </span>
+                            <span class="material-icons-outlined toggle-icon hidden">
+                                chevron_right
+                            </span>
+                        </div>
+                        <div id="tasks-content" class="hidden">
+                            <div>In progress</div>
+                            <div>Completed</div>
+                            <div>Overdue</div>
+                            <div style="font-weight: 600;">Add New Task</div>
+                        </div>
+                    </div>
+                    <div class="reminders">
+                        <div id="reminders">Reminders 1 <span class="material-icons-outlined toggle-icon">
+                                keyboard_arrow_down
+                            </span>
+                            <span class="material-icons-outlined toggle-icon hidden">
+                                chevron_right
+                            </span>
+                        </div>
+                        <div id="reminders-content" class="hidden">
+                            <div>project 1 is overdue </div>
+                        </div>
+                    </div>
+                    <div class="messeger">
+                        <div id="messeger">Messeger <span class="material-icons-outlined toggle-icon">
+                                keyboard_arrow_down
+                            </span>
+                            <span class="material-icons-outlined toggle-icon hidden">
+                                chevron_right
+                            </span>
+                        </div>
+                        <div id="messeger-content" class="hidden">
+                            <div>inbox 2 </div>
+                            <div>draft 2 </div>
+                            <div> starred 2 </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div></div>
+            </div>
+        </nav>
+        <div id="home-content">
+            <div class="home1">
+                <div id="date"> Wednesday, 4th August </div>
+                <div class="search">
+                    <div class="search-input">
+                        <input type="search" id="desktop-search" placeholder="Search for... ">
+                        <span class="material-icons-outlined search-icon">
+                            search
+                        </span>
+                    </div>
+                </div>
+
+                <div class="recent-projects">
+                    <div class="projects-headers">
+                        <h3>Recent Projects</h3>
+                        <p>view all</p>
+                    </div>
+                    <div class="projects-container">
+                        <div class="project">
+                            <div class="team-mates">
+                                <div class="mate">+4</div>
+                                <p>:</p>
+                            </div>
+                            <div class="project-content">
+                                <p class="p-title">Next 13 App</p>
+                                <p class="p-description">project description</p>
+                            </div>
+                            <p>In progress</p>
+                        </div>
+                        <div class="project">
+                            <div class="team-mates">
+                                <div class="mate">+4</div>
+                                <p>:</p>
+                            </div>
+                            <div class="project-content">
+                                <p class="p-title">Next 13 App</p>
+                                <p class="p-description">project description</p>
+                            </div>
+                            <p>In progress</p>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="reminders-container">
+                    <p class="heading">Reminders</p>
+                    <div class="one-reminder">
+                        <div class="reminder-content">
+                            <div class="content-container">
+                                <p class="rem-time">Tomorrow 0900 - 1000</p>
+                                <p class="rem-title">discussion for the Next 13 project</p>
+                            </div>
+                            <button class="rem-btn">set reminder</button>
+                        </div>
+                        <p class="pagination">. . .</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div id="home2">
+            <div class="user-nav">
+                <button>Add project</button>
+                <div class="user">
+                    <span class="material-icons-outlined">
+                        notifications
+                    </span>
+                    <div class="user-details">
+                        <div class="details">
+                            <div id="user-img">jm</div>
+                            <p id="user-name">jm</p>
+                        </div>
+                        <span class="material-icons-outlined">
+                            keyboard_arrow_down
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="./index.js"></script>
+</body>
+
+</html>
